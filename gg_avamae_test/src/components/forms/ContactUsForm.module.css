@@ -1,0 +1,150 @@
+.form {
+  padding: 5% 0;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .fineField {
+    display: flex !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
+  .fineField2 {
+    display: inline-flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
+    gap: 0 !important;
+  }
+}
+
+.fineField,
+.fineField2 {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 20px;
+}
+
+.field textarea,
+.field input {
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  background-color: #f8f9fc;
+  padding: 0.50rem;
+  width: 100%;
+  resize: none;
+}
+
+.action {
+  margin-bottom: 1rem;
+}
+
+.action button {
+  height: 35px;
+  cursor: pointer;
+  background-color: #2f7bb8;
+  color: white;
+  border: 1px solid #2f7bb8;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.action button:hover 
+{
+  background-color: #5b9ed4;
+  border-color: #5b9ed4;
+}
+
+.action button:active {
+  background-color: #356c99;
+  border: 1px solid #356c99;
+}
+
+.response {
+  padding: 20px 0;
+  text-align: center;
+  border: 1px solid #e1eecf;
+  border-radius: 4px;
+  background-color: #e9f4da;
+  width: 100%;
+}
+
+.addPhoneNum {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eff7ff !important;
+  border: 1px solid #eff7ff !important;
+  margin-bottom: 1rem;
+
+  color: #2f7bb8;
+  font-size: 0.85em;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.addPhoneNum:hover {
+  background-color: #ddf0ff !important;
+  border: 1px solid #ddf0ff !important;
+}
+
+.addPhoneNum:active {
+  background-color: #e7f3ff !important;
+  border: 1px solid #e7f3ff !important;
+}
+
+.addressButton {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  margin-bottom: 1rem;
+}
+
+.addAddress {
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  background-color: #f8f9fc;
+  padding: 0.50rem;
+  width: 20px;
+  height: 20px;
+  resize: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.addAddress:hover {
+  background-color: #e7f3ff !important;
+  border: 1px solid #2f7bb8 !important;
+}
+
+.addAddress:active {
+  background-color: #2f7bb8 !important;
+  border: 1px solid #2f7bb8 !important;
+}
+
+
+

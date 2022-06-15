@@ -1,0 +1,25 @@
+@media only screen and (max-width: 480px) {
+  .contact-main {
+    padding: 0 8%;
+  }
+
+  .contact-column2 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .contact-main {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr; /* Similar to setting flex=50% for columns, but is independent of content inside columns */
+    gap: 50px;
+    padding: 0 15%;
+    height: 900px; /* For the other pages the height of the main container is automatic, but this static to create the image hidden overflow effect of the demo site */
+    overflow: hidden;
+  }
+
+  .contact-image1 {
+    width: 100%;
+  }
+}

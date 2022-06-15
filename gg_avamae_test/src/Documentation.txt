@@ -1,0 +1,51 @@
+Firstly, thank you Avamae for considering me for the software engineer role.
+This has been an extremely valuable learning opportunity, especially as I started the test with 
+no prior React experience. Regardless of the outcome of the application, the skills I have
+gained and developed along the way will certainly serve me well in the future.
+
+While I feel I have more or less captured the design and functionality of the demo site provided
+in the test, this documentation is here to provide some thoughts on some of the choices I have
+made with my code.
+
+---
+
+For the home page photo carousel (using the Swiper library and pulling images and strapline text
+from the Avamae banner API), I've noticed that the first image does not show the model's face as
+it does in the demo site (at least on a widescreen browser window). My intiial thought was to
+distance the top of these two images from the top of the image container via CSS. While this looks
+good on the widescreen browser window, this creates empty space when the browser window is narrowed, 
+which I feel is not an acceptable trade-off. I am currently researching a better solution.
+
+For the company logo, I did try to use the one provided along with the other resources, but
+had some trouble with loading .svg files. As a placeholder, I have used a royalty-free .jpg logo. 
+From my current understanding, it is possible to load .svg files the same way you would load a .jpg 
+or .png, but it requires configuration of the file loader system. I am currently researching how
+this can be achieved.
+
+For the third section of the home page, where there is a box with text and a log in button on top 
+of an image, it was difficult to tell in the demo desktop view whether the box was partially
+transparent or not. It was more clear in the mobile view, where I did make the box partially 
+transparent, but held off on applying this styling to the desktop view. I noticed this at the end
+of the submission, otherwise I would have got in touch to clarify (as I would do in a professional
+setting if uncertain about what the desired styling was).
+
+For the contact form, it appeared to me that the "Add new phone number" button in the demo site 
+would dynamically add a new phone number form field each time the button was clicked. I struggled 
+to learn and implement this within the test time frame, so opted to allow the button to
+only create one additional field. Additionally, as the phone number fields were optional, I thought
+it may be useful to conditionally include the phone number details in the API POST request only if
+the fields were filled in. If this was not the intended design choice of Avamae, then this could
+easily be amended to always include said details in the "contactData" dictionary in ContactUsForm.js.
+
+---
+
+Besides the remarks listed above, I am generally happy with the functionality of my code.
+I have tried to keep said code clean and create separate components where possible, but
+appreciate that there will almost always be ways to make things even tidier/more efficient.
+As noted previously, I see this as an opportunity to learn just as much as it is a test of 
+my programming skills, and so will continue to think about how this work can be improved,
+even after it has been submitted.
+
+Thank you once again for taking the time to look at my work. 
+I look forward to any feedback you might have.
+

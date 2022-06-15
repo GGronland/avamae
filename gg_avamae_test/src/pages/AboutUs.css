@@ -1,0 +1,61 @@
+@media only screen and (max-width: 480px) {
+.main-about{
+    padding: 5% 8%;
+}
+
+.main-about-image-container {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    max-width: 550px; /* Scales the container down (and the image with it) with browser size */
+    margin: auto; /* Splits the remaining width space equally between the left/right margins, centering the content */
+}
+
+.about-image1 {
+    width: 100%; /* Scales the source image down to fit the width of the div containing it */
+    padding: 15px 0;
+}
+
+ul {
+    padding-left: 3%;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+li {
+    margin: 10px 0;
+}
+}
+
+
+
+
+
+@media only screen and (min-width: 481px) {
+    .main-about{
+        padding: 0 15%;
+    }
+    
+    .main-about-image-container {
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        max-width: 550px; /* Scales the container down (and the image with it) with browser size */
+        margin: auto; /* Splits the remaining width space equally between the left/right margins, centering the content */
+    }
+    
+    .about-image1 {
+        width: 100%; /* Scales the source image down to fit the width of the div containing it */
+        padding: 15px 0;
+    }
+    }

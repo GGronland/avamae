@@ -1,0 +1,116 @@
+@media only screen and (max-width: 480px) {
+  .header {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center; 
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    background-color: #ffffff;
+    padding: 0 15%; /* Provides side padding to give the narrow look of the website */
+    border-bottom: 1px solid rgb(228, 227, 227);
+  }
+
+  a {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+  }
+
+  .logoContainer {
+    width: 180px;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+  }
+
+  .logo {
+    border: none;
+    padding: 0;
+  }
+
+  .logo:hover {
+    cursor: pointer;
+  }
+
+  .logo_image {
+    width: 100%; /* Logo image is scaled down to size of div containing it */
+    height: 100%;
+  }
+
+  .header ul {
+    display: none;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 481px) {
+  .header {
+    width: 100%;
+    height: 4rem;
+    display: flex; /* Positions logo and link sections side-by-side */
+    align-items: center;
+    justify-content: space-between; /* 1st item flush with start, 2nd flush with end */
+    background-color: #ffffff;
+    padding: 0 15%; /* Provides side padding to give the narrow look of the website */
+    border-bottom: 1px solid rgb(228, 227, 227);
+  }
+
+  a {
+    display: flex;
+  }
+
+  .logoContainer {
+    width: 180px;
+    display: flex;
+  }
+
+  .logo {
+    border: none;
+    padding: 0;
+  }
+
+  .logo:hover {
+    cursor: pointer;
+  }
+
+  .logo_image {
+    width: 100%; /* Logo image is scaled down to size of div containing it */
+    height: 100%;
+  }
+
+  .header ul {
+    list-style: none; /* Removes automatic bullet pointing of links */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Positions individual links side-by-side */
+    align-items: center;
+  }
+
+  .header li {
+    margin-left: 2rem; /* Spaces each link from one another */
+  }
+
+  .header a {
+    text-decoration: none; /* Removes automatic underlining links */
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    color: #000000;
+  }
+
+  .navlogin {
+    width: 100px !important;
+    color: #2f7bb8 !important;
+    background-color: #eff7ff !important;
+    border-color: white !important;
+  }
+}
